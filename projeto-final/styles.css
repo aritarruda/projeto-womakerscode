@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria : #22D4FD;
+    --cor-hover : #541212;
+
+    --fonte-primaria :'Krona One', sans-serif;
+    --fonte-secundaria : 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color:var(--cor-secundaria);
+}
+
+.botao {
+    background-color:#22D4FD;
+    color: white;
+    padding: 10px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: #1f4d57;
+    min-height: 50px;
+}
+
+.container {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    min-height: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-secundaria);
+    transition: .5s;
+    text-decoration: underline;
+}
+
+.container__imagem {
+    max-width: 280px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.container__descrição {
+    padding: 2rem;
+}
+
+.descricao__titulo {
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--branco-principal);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.apresentacao__imagem {
+    width: 30%;
+    border-radius: 20%;
+}
+
+.rodape {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 80;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
